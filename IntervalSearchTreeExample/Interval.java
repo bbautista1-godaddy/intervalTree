@@ -1,3 +1,5 @@
+package IntervalSearchTreeExample;
+
 public class Interval<Type> implements Comparable<Interval<Type>> {
 
     private long start;

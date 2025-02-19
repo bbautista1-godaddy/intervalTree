@@ -1,3 +1,5 @@
+package TreeMapSearchExample;
+
 import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -5,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-class IntervalSearchExample {
+class TreeMapSearchExample {
 
     public static void addInterval(TreeMap<Integer, List<Map.Entry<List<Integer>, String>>> map, List<Integer> interval, String data, int granularity) {
         int start = interval.get(0);
@@ -85,12 +87,13 @@ class IntervalSearchExample {
         addInterval(intervalMap, Arrays.asList(100000, 200000), "CcAvenue Rupay2", granularity);
         addInterval(intervalMap, Arrays.asList(100400, 200000), "CcAvenue Rupay3", granularity);
 
+        System.out.println(intervalMap.toString());
 
         // Query intervals
-        List<String> result = querySingleNumber(intervalMap, 100405);
-        System.out.println("Intervals that contain with 100405: " + result);
-
-        result = querySingleNumber(intervalMap, 353904);
-        System.out.println("Intervals that contain with 353904: " + result);
+//        List<String> result = querySingleNumber(intervalMap, 100405);
+//        System.out.println("Intervals that contain 100405: " + result);
+//
+//        result = querySingleNumber(intervalMap, 353904);
+//        System.out.println("Intervals that contain 353904: " + result);
     }
 }

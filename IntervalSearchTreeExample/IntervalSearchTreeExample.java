@@ -1,6 +1,8 @@
+package IntervalSearchTreeExample;
+
 import java.util.List;
 
-public class Main {
+public class IntervalSearchTreeExample {
     public static void main(String[] args) {
         IntervalTree<String> it = new IntervalTree<>();
         it.addInterval(250010, 250010, "DLocal2");
